@@ -1,22 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-.parallax {
-  /* The image used */
-  background-image: url("picture.png");
-
-  /* Set a specific height */
-  height: 2000px;
-  width: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* mixins, variables, etc */
 
 
@@ -30,7 +14,6 @@
 
 body{
     padding-top: 60px;
-    width: 100%;
 }
 
 section{
@@ -46,43 +29,6 @@ textarea{
 h1{
     margin-bottom: 10px;
  }
-}
-
-.slogan {
-  padding-top: 1rem;
-  text-align: center;
-}
-
-.columnleftone {
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: left;
-  width: 55%;
-}
-
-.columnrightone {
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: left;
-  width: 40%;
-}
-
-.columnlefttwo {
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: left;
-  width: 40%;
-}
-
-.columnrighttwo {
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: left;
-  width: 55%;
 }
 
 /* typography */
@@ -128,13 +74,10 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  img{
+      display: none;
   }
-  
+
   /* footer */
 
 footer {
@@ -178,6 +121,7 @@ input {
     color: $state-danger-text;
   }
 }
+
 
 /* sidebar */
 
