@@ -1,0 +1,20 @@
+<% provide(:title, 'Create test reading') %>
+<h1>Test reading</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@waters, url: waters_path) do |f| %>
+
+      <%= f.label :usage %>
+      <%= f.number_field :usage, step: :any, class: 'form-control' %>
+
+      <%= f.label :user_id %>
+      <%= f.number_field :user_id, class: 'form-control' %>
+
+      <%= f.label :sampled_at %>
+      <%= f.datetime_select :sampled_at, class: 'form-control' %>
+
+      <%= f.submit "Submit reading", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
